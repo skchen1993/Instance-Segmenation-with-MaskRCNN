@@ -1,6 +1,6 @@
 NYCU VRDL hw3 : use MaskRCNN for nuclei instance segmentation
 
-[Roport is here!!](https://drive.google.com/file/d/13a14cF253CwnXkNg_hnNqUOrDvI3w5Bt/view?usp=sharing)
+[Roport is here!!](https://drive.google.com/file/d/1uHuA5tXRzZy0WN-6m4LRx2EaYF4HCvim/view?usp=sharing)
 
 # MaskRCNN for nuclei instance segmentation
 - nuclei dataset: 24 training image (each with hundreds of mask label), 6 testing image 
@@ -29,7 +29,7 @@ NYCU VRDL hw3 : use MaskRCNN for nuclei instance segmentation
 Download the annotation files and put them into `./data/coco/annotations/`  
 
 - Download model weight:    
-[checkpoints]()  
+[checkpoints](https://drive.google.com/file/d/1FeO1K-8MxF5a6jbjn2ea6TGdtQTtSVr9/view?usp=sharing)  
 Download the model weight and put them into `./checkpoints`   
    
 
