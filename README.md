@@ -27,6 +27,7 @@ NYCU VRDL hw3 : use MaskRCNN for nuclei instance segmentation
 - Download annotayion files:  
 [Annotation file](https://drive.google.com/drive/folders/1Ef7VlM0ZSpsSWA4JDs-y_N9nVYlcEDux?usp=sharing)    
 Download the annotation files and put them into `./data/coco/annotations/`  
+(You can use jupyter notebook file [here](https://colab.research.google.com/drive/1Kat61LeJKL6icLnDDDoiBVoZrEMslcYh?usp=sharing) to visualize you annotation file on image to make sure your annotation file is correct)  
 
 - Download model weight:    
 [checkpoints](https://drive.google.com/file/d/1FeO1K-8MxF5a6jbjn2ea6TGdtQTtSVr9/view?usp=sharing)  
