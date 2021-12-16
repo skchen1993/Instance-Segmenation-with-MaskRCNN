@@ -40,15 +40,15 @@ modified the `work_dir`, `load_from`, `ann_file`
 
 
 ### Training
-- Training the model
+- Training the model:  
   First, download the ResNext101 pretrained model([here](https://github.com/open-mmlab/mmdetection/tree/master/configs/mask_rcnn)) weight and then put it into `./checkpoints/`   , and remember to modified the  `load_from` path in model config.
   
-- use command below to train  
+- use command below to train:  
   `./tools/dist_train.sh ./configs/mask_rcnn/VRDL_HW3_nuclei.py {number of GPU}`  
   
 ### Testing
 - Prepare the trained model weight and put it into `./checkpoints/`, and remember to modified the  `load_from` path in model config.
-- use command below to test and generate json.file    
+- use command below to test and generate json.file:  
 `python tools/test.py ./configs/mask_rcnn/VRDL_HW3_nuclei.py {path of trained model}  --format-only --options "jsonfile_prefix={path of result}" `
 
 - if you want to visualize testing result, cau use command below:  
