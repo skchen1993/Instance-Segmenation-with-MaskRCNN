@@ -1,4 +1,4 @@
-NYCU VRDL hw3 : use MaskRCNN for nuclei instance segmentation
+Using MaskRCNN for nuclei instance segmentation
 
 [Roport is here!!](https://drive.google.com/file/d/1HgH1khItdw1wG3BtikGjXUGNEGzVEscm/view?usp=sharing)
 
@@ -20,7 +20,6 @@ NYCU VRDL hw3 : use MaskRCNN for nuclei instance segmentation
 
 ### Install requirement
 - Download project:
- `git clone https://github.com/skchen1993/VRDL_3_MaskRCNN.git`  
 - Install mmdetection:  
   Follow the official setup instruction in mmdetection github ([link](https://github.com/open-mmlab/mmdetection/blob/master/docs/en/get_started.md))  
   
@@ -36,7 +35,7 @@ Download the model weight and put them into `./checkpoints`
 
 
 ###  Model config setting
-check the model config file in `./configs/mask_rcnn/VRDL_HW3_nuclei.py`  
+check the model config file in `./configs/mask_rcnn/nuclei.py`  
 modified the `work_dir`, `load_from`, `ann_file`  
 
 
@@ -45,15 +44,15 @@ modified the `work_dir`, `load_from`, `ann_file`
   First, download the ResNext101 pretrained model([here](https://github.com/open-mmlab/mmdetection/tree/master/configs/mask_rcnn)) weight and then put it into `./checkpoints/`   , and remember to modified the  `load_from` path in model config.
   
 - use command below to train:  
-  `./tools/dist_train.sh ./configs/mask_rcnn/VRDL_HW3_nuclei.py {number of GPU}`  
+  `./tools/dist_train.sh ./configs/mask_rcnn/nuclei.py {number of GPU}`  
   
 ### Testing
 - Prepare the trained model weight and put it into `./checkpoints/`, and remember to modified the  `load_from` path in model config.
 - use command below to test and generate json.file:  
-`python tools/test.py ./configs/mask_rcnn/VRDL_HW3_nuclei.py {path of trained model}  --format-only --options "jsonfile_prefix={path of result}" `
+`python tools/test.py ./configs/mask_rcnn/nuclei.py {path of trained model}  --format-only --options "jsonfile_prefix={path of result}" `
 
 - if you want to visualize testing result, cau use command below:  
- `python tools/test.py ./configs/mask_rcnn/VRDL_HW3_nuclei.py {path of trained model} --eval bbox segm --show`   
+ `python tools/test.py ./configs/mask_rcnn/nuclei.py {path of trained model} --eval bbox segm --show`   
  
  
   
